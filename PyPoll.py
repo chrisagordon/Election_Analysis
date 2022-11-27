@@ -46,8 +46,28 @@ print(f'Total Votes: {total_votes}')
 print(f'We Had {len(candidates)} candidates')
 print(candidate_votes)
 
+# Winning Candidate and Winning Count Tracker
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
 for candidate in candidates:
-    print(candidate)
-    print(f'votes {round((candidate_votes[candidate]/total_votes)*100)}%')
+    votes=candidate_votes[candidate]
+    vote_percentage = float(votes)/float(total_votes)*100
 
+    if(votes>winning_count) and (vote_percentage>winning_percentage):
+        #if true then set winning_count=votes and winning_percent=vote_percentage
 
+        winning_count=votes
+        winning_percentage=vote_percentage
+        winning_candidate=candidate
+    print("")
+    print(f"{candidate}: {vote_percentage:.1f}% ({votes:,})\n")
+
+winning_candidate_summary = (
+    f"-------------------------\n"
+    f"Winner: {winning_candidate}\n"
+    f"Winning Vote Count: {winning_count:,}\n"
+    f"Winning Percentage: {winning_percentage:.1f}%\n"
+    f"-------------------------\n")
+print(winning_candidate_summary)
