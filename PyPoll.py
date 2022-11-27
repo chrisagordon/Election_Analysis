@@ -18,6 +18,7 @@ total_votes=0
 candidates=[]
 candidate_votes = {}
 #{"name":"","votes":""}
+
 # Open the election results and read the file.
 with open(file_to_load) as election_data:
 
@@ -34,6 +35,8 @@ with open(file_to_load) as election_data:
         #check if in candidate list
         if candidate not in candidates:
             candidates.append(candidate)
+        #add to candidate votes
+        
 
 
 #3. Print the total votes.
