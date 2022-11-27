@@ -36,9 +36,18 @@ with open(file_to_load) as election_data:
         if candidate not in candidates:
             candidates.append(candidate)
         #add to candidate votes
-        
+            candidate_votes[candidate]=0
+
+        candidate_votes[candidate] +=1    
 
 
 #3. Print the total votes.
 print(f'Total Votes: {total_votes}')
 print(f'We Had {len(candidates)} candidates')
+print(candidate_votes)
+
+for candidate in candidates:
+    print(candidate)
+    print(f'votes {round((candidate_votes[candidate]/total_votes)*100)}%')
+
+
