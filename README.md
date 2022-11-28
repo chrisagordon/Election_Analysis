@@ -15,7 +15,6 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 
 ## Summary 
 The analysis of the election shows that:
-
 Election Results
 -------------------------
 Total Votes: 369,711
