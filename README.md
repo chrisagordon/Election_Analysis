@@ -26,7 +26,7 @@ The analysis of the election shows that:
    -Winning Vote Count: 272,892
    -Winning Percentage: 73.8%
 
-##Challenge Overview
+## Challenge Overview
 
-##Challenge Summary
+## Challenge Summary
 
